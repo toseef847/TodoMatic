@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 export default function Todo(props) {
   const [isEditing, setEditing] = useState(false);
-  const [newName, setNewName] = useState(props.name);
+  const [newName, setNewName] = useState("");
 
   const handleChange = (e) => {
     setNewName(e.target.value);
